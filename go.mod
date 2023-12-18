@@ -8,6 +8,7 @@ require (
 	github.com/dohernandez/retry v0.0.0-20231218002820-daddd000e703
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/sync v0.5.0
+	github.com/dohernandez/dev v0.1.0
 )
 
 require (
