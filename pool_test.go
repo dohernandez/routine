@@ -2,6 +2,8 @@ package routine_test
 
 import (
 	"context"
+	"runtime"
+	"strings"
 	"sync"
 	"testing"
 	"time"
@@ -12,7 +14,16 @@ import (
 	"github.com/dohernandez/routine"
 )
 
-func TestRunConcurrent(t *testing.T) {
+func getGoroutineID() string {
+	var buf [64]byte
+
+	n := runtime.Stack(buf[:], false)
+
+	// Parse the 4707 out of "goroutine 4707 [running]:"
+	return strings.Fields(strings.TrimPrefix(string(buf[:n]), "goroutine "))[0]
+}
+
+func TestRunInPool(t *testing.T) {
 	t.Parallel()
 
 	t.Run("run successfully all parallel", func(t *testing.T) {
@@ -31,7 +42,7 @@ func TestRunConcurrent(t *testing.T) {
 
 		defer close(stopper)
 
-		rc := routine.RunConcurrent(ctx, elms, 10, func(ctx context.Context, elm interface{}) (any, error) {
+		rc := routine.RunInPool(ctx, elms, 10, func(ctx context.Context, elm interface{}) (any, error) {
 			// Simulate some work to be able to test the concurrency
 			time.Sleep(5 * time.Millisecond)
 
@@ -70,7 +81,7 @@ func TestRunConcurrent(t *testing.T) {
 
 		defer close(stopper)
 
-		rc := routine.RunConcurrent(ctx, elms, 3, func(ctx context.Context, elm interface{}) (any, error) {
+		rc := routine.RunInPool(ctx, elms, 3, func(ctx context.Context, elm interface{}) (any, error) {
 			// Simulate some work to be able to test the concurrency
 			time.Sleep(5 * time.Millisecond)
 
@@ -109,7 +120,7 @@ func TestRunConcurrent(t *testing.T) {
 
 		defer close(stopper)
 
-		rc := routine.RunConcurrent(ctx, elms, 10, func(ctx context.Context, elm interface{}) (any, error) {
+		rc := routine.RunInPool(ctx, elms, 10, func(ctx context.Context, elm interface{}) (any, error) {
 			// Simulate some work to be able to test the concurrency
 			time.Sleep(5 * time.Millisecond)
 

@@ -7,12 +7,11 @@ import (
 	"golang.org/x/sync/errgroup"
 )
 
-// RunConcurrent runs the operation concurrently.
+// RunInPool runs the operation concurrently.
 //
 // The operation is executed in a goroutine per element of the slice but limited by the given limit.
 // The operation will be stopped when an error, when the given context is canceled or when the given stopper channel is closed.
-// Deprecated: use RunInPool instead. This function will be removed in the v0.5.0 release.
-func RunConcurrent(
+func RunInPool(
 	ctx context.Context,
 	elms []any,
 	limit int,
@@ -97,4 +96,12 @@ func RunConcurrent(
 	}()
 
 	return rc
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+
+	return b
 }
