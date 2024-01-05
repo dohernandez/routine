@@ -17,6 +17,8 @@ github.com/dohernandez/dev v0.8.1 h1:Gow/5Ms3HO917LuZ2SdfBfK7iT2pot+wta7Q+m56d/A
 github.com/dohernandez/dev v0.8.1/go.mod h1:wD9owTM9rveq54KvgDhoP8G5ntMf/XdbI/xonKbLWkY=
 github.com/dohernandez/dev v0.10.2 h1:l9nWNM2i1dBdmB3AbGl+N4FKKqNxvxzsMcQu+cWJiMI=
 github.com/dohernandez/dev v0.10.2/go.mod h1:wD9owTM9rveq54KvgDhoP8G5ntMf/XdbI/xonKbLWkY=
+github.com/dohernandez/dev v0.10.3 h1:HMm5G5NwG6et+MjYsEJZpjn8epN6Zd0rR5gyilLXlw4=
+github.com/dohernandez/dev v0.10.3/go.mod h1:wD9owTM9rveq54KvgDhoP8G5ntMf/XdbI/xonKbLWkY=
 github.com/dohernandez/errors v0.0.0-20231017211553-9f8df5e0169a h1:u+JsU1xxhrC3qxy48+3+v5vX2aWfDygY3cYaRDiek6c=
 github.com/dohernandez/errors v0.0.0-20231017211553-9f8df5e0169a/go.mod h1:icPZ1kFrVXAbkE9o/jJQQZ30uwfmjHFaDlXXghbpPWs=
 github.com/dohernandez/retry v0.0.0-20231217162611-271b3d9f267b h1:2XoltXXwLCYljFIOIVEBjzGbe0ZUQuCTt8PsFnbgitc=
