@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/bool64/ctxd v1.2.1
 	github.com/cenkalti/backoff/v4 v4.2.1
-	github.com/dohernandez/dev v0.14.2
+	github.com/dohernandez/dev v0.14.4
 	github.com/dohernandez/errors v0.0.0-20231017211553-9f8df5e0169a
 	github.com/dohernandez/retry v0.1.6
 	github.com/stretchr/testify v1.8.4
