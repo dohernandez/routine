@@ -10,8 +10,8 @@ github.com/dohernandez/dev v0.14.4 h1:KESbtDBWXc69J2noS9MLlJwhCu4FEVd3u/WqcScIto
 github.com/dohernandez/dev v0.14.4/go.mod h1:wD9owTM9rveq54KvgDhoP8G5ntMf/XdbI/xonKbLWkY=
 github.com/dohernandez/errors v0.0.0-20231017211553-9f8df5e0169a h1:u+JsU1xxhrC3qxy48+3+v5vX2aWfDygY3cYaRDiek6c=
 github.com/dohernandez/errors v0.0.0-20231017211553-9f8df5e0169a/go.mod h1:icPZ1kFrVXAbkE9o/jJQQZ30uwfmjHFaDlXXghbpPWs=
-github.com/dohernandez/retry v0.1.6 h1:T4MgLdPMpYZNzJutFO+n+YclNM0RRNMdlDR61i/+JH8=
-github.com/dohernandez/retry v0.1.6/go.mod h1:8VrL+MzduGFs82rzXPQTzFsC+LMzrZ1YT9IJoHvG3iE=
+github.com/dohernandez/retry v0.1.7 h1:7R7BgEtjS5Ia9MvOD6u4uOrh6hJBZRIAUE0xR2XG858=
+github.com/dohernandez/retry v0.1.7/go.mod h1:spokRf2AhBie1E6GodVWvN87yf2Ipl3YVkn1fe5+cCQ=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
